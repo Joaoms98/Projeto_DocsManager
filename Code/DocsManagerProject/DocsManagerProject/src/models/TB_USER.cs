@@ -12,6 +12,7 @@ namespace DocsManagerProject.src.models
     [Table("TB_USER")]
     public class TB_USER
     {
+       [Key]
        [Required]
        public string Email { get; set; }
        

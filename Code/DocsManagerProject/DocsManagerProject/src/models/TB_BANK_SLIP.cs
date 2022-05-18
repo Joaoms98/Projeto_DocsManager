@@ -35,8 +35,6 @@ namespace DocsManagerProject.src.models
         [Required]
         public string File_Address_Receipt { get; set; }
 
-        public string Pay_Date { get; set; }
-
         public DateTime File_Date { get; set; }
     }
 }
