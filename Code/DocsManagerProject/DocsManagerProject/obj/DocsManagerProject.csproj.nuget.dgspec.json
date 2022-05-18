@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {}
+    "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {
+    "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+        "projectUniqueName": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
         "projectName": "DocsManagerProject",
-        "projectPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
-        "packagesPath": "C:\\Users\\jvm18\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
+        "projectPath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+        "outputPath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jvm18\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
