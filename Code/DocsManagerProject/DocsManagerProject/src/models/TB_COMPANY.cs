@@ -24,6 +24,6 @@ namespace DocsManagerProject.src.models
 
         public string Telephone { get; set; }
 
-        public string Trade_Representative { get; set; }
+        public string Agent { get; set; }
     }
 }

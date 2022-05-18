@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DocsManagerProject.src.models
@@ -18,6 +19,10 @@ namespace DocsManagerProject.src.models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id_Bank_Slip { get; set; }
 
+        [ForeignKey("Fk_TB_COMPANY")]
+        [Required]
+        public TB_COMPANY Company { get; set; }
+
         [Required]
         public double Value { get; set; }
 
@@ -25,6 +30,13 @@ namespace DocsManagerProject.src.models
         public string Expiration_Date { get; set; }
 
         [Required]
-        public string File_Address { get; set; }
+        public string File_Address_Bank_Slip { get; set; }
+        
+        [Required]
+        public string File_Address_Receipt { get; set; }
+
+        public string Pay_Date { get; set; }
+
+        public DateTime File_Date { get; set; }
     }
 }
