@@ -40,6 +40,9 @@ namespace DocsManagerProject.src.dto
         public int Id_Company { get; set; }
 
         [Required]
+        public string CNPJ { get; set; }
+
+        [Required]
         public string Trade_Name { get; set; }
 
         public string Telephone { get; set; }

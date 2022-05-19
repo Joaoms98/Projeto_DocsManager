@@ -1,4 +1,5 @@
 ﻿using DocsManagerProject.src.dto;
+using DocsManagerProject.src.models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace DocsManagerProject.src.repositories
 
         Task UpdateBankSlip(UpdateBankSlipDTO updateBankSlip);
 
-        Task<List<ITB_BANK_SLIP>> GetBankSlipBySearch(double value, string expirationDate, DateTime fileData);
+        Task<List<TB_BANK_SLIP>> GetBankSlipBySearch(double value, string expirationDate, DateTime fileData);
+
+        Task<TB_BANK_SLIP> GetBankSlipById(int idBankSlip);
     }
 }

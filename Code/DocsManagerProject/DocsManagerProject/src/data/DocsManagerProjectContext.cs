@@ -12,7 +12,7 @@ namespace DocsManagerProject.src.data
     public class DocsManagerProjectContext : DbContext
     {
         public DbSet<TB_BANK_SLIP> BankSlips {get; set;}
-        public DbSet<TB_COMPANY> Companys { get; set; }
+        public DbSet<TB_COMPANY> Companies { get; set; }
         public DbSet<TB_USER> Users { get; set; }
         
         public DocsManagerProjectContext(DbContextOptions<DocsManagerProjectContext> opt) : base(opt)

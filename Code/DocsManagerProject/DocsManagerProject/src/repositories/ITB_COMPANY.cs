@@ -1,4 +1,5 @@
 ﻿using DocsManagerProject.src.dto;
+using DocsManagerProject.src.models;
 using System.Threading.Tasks;
 
 namespace DocsManagerProject.src.repositories
@@ -13,7 +14,7 @@ namespace DocsManagerProject.src.repositories
     {
         Task NewCompany(NewCompanyDTO newCompany);
         Task UpdateCompany(UpdateCompanyDTO updateCompany);
-        Task<ITB_COMPANY> GetCompanyByCNPJ (string cnpj);
-        Task<ITB_COMPANY>GetCompanyByTradeName (string tradeName);
+        Task<TB_COMPANY> GetCompanyByCNPJ (string cnpj);
+        Task<TB_COMPANY> GetCompanyByTradeName (string tradeName);
     }
 }
