@@ -18,7 +18,7 @@ namespace DocsManagerProject.src.repositories
 
         Task UpdateBankSlip(UpdateBankSlipDTO updateBankSlip);
 
-        Task<List<TB_BANK_SLIP>> GetBankSlipBySearch(double value, string expirationDate, DateTime fileData);
+        Task<List<TB_BANK_SLIP>> GetBankSlipBySearch(double value, string expirationDate, string cnpj);
 
         Task<TB_BANK_SLIP> GetBankSlipById(int idBankSlip);
     }

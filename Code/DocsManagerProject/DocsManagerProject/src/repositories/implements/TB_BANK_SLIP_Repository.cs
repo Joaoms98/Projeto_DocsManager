@@ -37,39 +37,36 @@ namespace DocsManagerProject.src.repositories.implements
         /// <para>Date: 18/05/2022 </para>
         /// </summary>
 
-        //public async Task<list<TB_BANK_SLIP>> GetBankSlipBySearch(double value, string expirationDate, DateTime fileDate)
-        //{
-        //    switch (value,expirationDate,fileDate)
-        //    {
-        //        case (null, null, null):
-        //            return await _context.BankSlips
-        //                .ToListAsync();
-        //        case (null, null, _):
-        //            return await _context.BankSlips
-        //                .Where(b => b.File_Date == fileDate)
-        //                .ToListAsync();
-        //        case (null, _, null):
-        //            return await _context.BankSlips
-        //                .Where(b => b.Expiration_Date == expirationDate)
-        //                .ToListAsync();
-        //        case (_, null, null):
-        //            return await _context.BankSlips
-        //                .Where(b => b.Value == value)
-        //                .ToListAsync();
-        //        case (_, _, null):
-        //            return await _context.BankSlips
-        //                .Where(b => b.Value.Contains(value) & b.Expiration_Date == expirationDate)
-        //                .ToListAsync();
-        //        case (null, _, _):
-        //            return await _context.BankSlips
-        //                .Where(b => b.Expiration_Date.Contains(expirationDate) & b.File_Date == fileDate)
-        //                .ToListAsync();
-        //        case (_, null, _):
-        //            return await _context.BankSlips
-        //                .Where(b => b.Value.Contains(value) & b.File_Date == fileDate)
-        //                .ToListAsync();
-        //    }
-        //}
+        public async Task<List<TB_BANK_SLIP>> GetBankSlipBySearch(double value, string expirationDate, string cnpj)
+        {
+            switch(value, expirationDate, cnpj) 
+            {
+                case (_, null, null):
+                    return await _context.BankSlips
+                        .Where(b => b.Value == value)
+                        .ToListAsync();
+                case (0.0, _, null):
+                    return await _context.BankSlips
+                        .Where(b => b.Expiration_Date == expirationDate)
+                        .ToListAsync();
+                case (0.0, null, _):
+                    return await _context.BankSlips
+                        .Where(b => b.Company.CNPJ == cnpj)
+                        .ToListAsync();
+                case (_, _, null):
+                    return await _context.BankSlips
+                        .Where(b => b.Expiration_Date.Contains(expirationDate) & b.Value == value)
+                        .ToListAsync();
+                case (0.0, _, _):
+                    return await _context.BankSlips
+                        .Where(b => b.Expiration_Date.Contains(expirationDate) & b.Company.CNPJ == cnpj)
+                        .ToListAsync();
+                case (_, _, _):
+                    return await _context.BankSlips
+                    .Where(b => b.Expiration_Date.Contains(expirationDate) & b.Company.CNPJ == cnpj & b.Value == value)
+                    .ToListAsync();
+            }
+        }
 
         /// <summary>
         /// <para>Resume: Method responsible for searching a Bank Slip by id</para>
@@ -88,6 +85,7 @@ namespace DocsManagerProject.src.repositories.implements
         /// <para>Version: 1.0</para>
         /// <para>Date: 18/05/2022 </para>
         /// </summary>
+
         public async Task NewBankSlip(NewBankSlipDTO bankSlip)
         {
             await _context.BankSlips.AddAsync(new TB_BANK_SLIP

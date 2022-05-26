@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using DocsManagerProject.src.utilities;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DocsManagerProject.src.models
@@ -18,8 +19,8 @@ namespace DocsManagerProject.src.models
        
        [Required]
        public string Password { get; set; }
-        
+       
        [Required]
-       public string Type { get; set; }
+       public UserType Type { get; set; }
     }
 }
