@@ -2,6 +2,7 @@
 using DocsManagerProject.src.dto;
 using DocsManagerProject.src.models;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Threading.Tasks;
 
 namespace DocsManagerProject.src.repositories.implements
@@ -82,6 +83,17 @@ namespace DocsManagerProject.src.repositories.implements
             _company.Agent = company.Agent;
             _context.Companies.Update(_company);
             await _context.SaveChangesAsync();
+        }
+
+        /// <summary>
+        /// <para>Resumo: Asynchronous method responsible for creating company without duplicating in the database</para>
+        /// </summary>
+        /// <param name="dto">NewCompanyDTO</param>
+        public async Task CreateCompanyNotDuplicated(NewCompanyDTO dto)
+        {
+            var company = await GetCompanyByCNPJ(dto.CNPJ);
+            if (company != null) throw new Exception("This company already exist");
+            await NewCompany(dto);
         }
         #endregion
     }

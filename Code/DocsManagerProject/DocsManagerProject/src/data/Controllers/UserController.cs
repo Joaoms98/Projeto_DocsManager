@@ -12,7 +12,7 @@ namespace DocsManagerProject.src.data.Controllers
 {
     [ApiController]
     [Route("api/Users")]
-    [Produces("apllication/json")]
+    [Produces("application/json")]
     public class UserController : ControllerBase
     {
         #region Attributes
@@ -79,7 +79,7 @@ namespace DocsManagerProject.src.data.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(TB_USER))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [HttpGet("email/{useremail}")]
-        [Authorize(Roles = "USER, ONG, ADMIN")]
+        [Authorize(Roles = "USER, ADMIN")]
         public async Task<ActionResult> GetUserByAdressAsync([FromRoute] string email)
         {
             var user = await _repository.GetUserByEmail(email);
