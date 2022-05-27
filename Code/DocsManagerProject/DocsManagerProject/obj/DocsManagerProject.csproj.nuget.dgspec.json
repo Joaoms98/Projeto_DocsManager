@@ -1,6 +1,19 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+        "projectName": "DocsManagerProject",
+        "projectPath": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
+=======
     "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {}
   },
   "projects": {
@@ -12,6 +25,7 @@
         "projectPath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
         "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
         "outputPath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
+>>>>>>> dbcdc53d6b7c4ce10cfb114e1d1f0ecfa46246e4
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",

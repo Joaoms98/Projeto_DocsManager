@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "yjLrapixaea9sJYk31rn/URdB7mTZeKiEIpoG1z6RmzIhB9s+pNoHKCqv5XlKf1wzRoNJ+OYLZ2NlvPOVAeIwg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+=======
   "dgSpecHash": "wTPrCNzpyCuSzM9cmtPwkM1XWs/2PVGQOeTczhAJMNm1jKRB/4zQpxTjLGyE9ho+yhitwI7KMW65IP5InbDOLA==",
   "success": true,
   "projectFilePath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+>>>>>>> dbcdc53d6b7c4ce10cfb114e1d1f0ecfa46246e4
   "expectedPackageFiles": [
     "C:\\Users\\Victor\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Victor\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
