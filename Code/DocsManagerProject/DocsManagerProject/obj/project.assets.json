@@ -6001,19 +6001,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jvm18\\.nuget\\packages\\": {}
+    "C:\\Users\\Victor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
       "projectName": "DocsManagerProject",
-      "projectPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
-      "packagesPath": "C:\\Users\\jvm18\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
+      "projectPath": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
+=======
+      "projectUniqueName": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+      "projectName": "DocsManagerProject",
+      "projectPath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+      "outputPath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
+>>>>>>> dbcdc53d6b7c4ce10cfb114e1d1f0ecfa46246e4
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jvm18\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6084,7 +6092,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
