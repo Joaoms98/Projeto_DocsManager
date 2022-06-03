@@ -1,34 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {}
+    "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {
+    "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+        "projectUniqueName": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
         "projectName": "DocsManagerProject",
-        "projectPath": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
-        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Victor\\Programacao\\UP_GIT\\Projetos\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
-=======
-    "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {}
-  },
-  "projects": {
-    "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
-        "projectName": "DocsManagerProject",
-        "projectPath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
-        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-        "outputPath": "D:\\Biblioteca\\Documents\\Docs_Manager\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
->>>>>>> dbcdc53d6b7c4ce10cfb114e1d1f0ecfa46246e4
+        "projectPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\DocsManagerProject.csproj",
+        "packagesPath": "C:\\Users\\jvm18\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jvm18\\Desktop\\prograhmaisaoção\\Projeto_DocsManager\\Code\\DocsManagerProject\\DocsManagerProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jvm18\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,6 +62,10 @@
               "target": "Package",
               "version": "[5.0.13, )"
             },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
             "System.Collections": {
               "target": "Package",
               "version": "[4.3.0, )"
@@ -99,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

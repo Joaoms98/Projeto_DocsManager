@@ -1,6 +1,8 @@
 ﻿using DocsManagerProject.src.dto;
+using DocsManagerProject.src.models;
 using DocsManagerProject.src.repositories;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -32,9 +34,31 @@ namespace DocsManagerProject.src.data.Controllers
         #endregion
 
         #region Methods
-       [HttpPost]
-       [Authorize(Roles = "USER, ADMIN")]
-    
+        /// <summary>
+        /// Create a new Bankslips
+        /// </summary>
+        /// <param name="bankSlip">NewBankSlipDTO</param>
+        /// <returns>ActionResult</returns>
+        /// <remarks>
+        /// Example:
+        ///
+        ///     POST /api/Users
+        ///     {
+        ///        "trade_name": "Trader Store LTDA",
+        ///        "cnpj": "12345678901234",
+        ///        "telephone": "11980807565",
+        ///        "agent": "João Meneses"
+        ///     } 
+        ///
+        /// </remarks>
+        /// <response code="201">Returns created company</response>
+        /// <response code="400">Requisition error</response>
+        /// <response code="401">Company already created</response>
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(TB_BANK_SLIP))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [HttpPost]
+        [Authorize(Roles = "USER, ADMIN")]
        public async Task<ActionResult> NewBankSlip([FromBody] NewBankSlipDTO bankSlip)
         {
             if (!ModelState.IsValid) return BadRequest();
