@@ -70,7 +70,7 @@ namespace DocsManagerProject.src.data.Controllers
         }
 
         /// <summary>
-        /// Get User By Address
+        /// Get User By email
         /// </summary>
         /// <param name="email">string</param>
         /// <returns>ActionResult</returns>
@@ -78,9 +78,9 @@ namespace DocsManagerProject.src.data.Controllers
         /// <response code="404">Email not found</response>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(TB_USER))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet("email/{useremail}")]
+        [HttpGet("email/{userEmail}")]
         [Authorize(Roles = "USER, ADMIN")]
-        public async Task<ActionResult> GetUserByAdressAsync([FromRoute] string email)
+        public async Task<ActionResult> GetUserByEmail([FromRoute] string email)
         {
             var user = await _repository.GetUserByEmail(email);
 

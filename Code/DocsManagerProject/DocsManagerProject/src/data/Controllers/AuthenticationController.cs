@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace DocsManagerProject.src.data.Controllers
 {
+    [ApiController]
+    [Route("api/Authentication")]
+    [Produces("application/json")]
     public class AuthenticationController : ControllerBase
     {
         #region Attributes

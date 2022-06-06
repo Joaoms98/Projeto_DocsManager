@@ -16,7 +16,6 @@ namespace DocsManagerProject.src.repositories
         Task UpdateCompany(UpdateCompanyDTO updateCompany);
         Task<TB_COMPANY> GetCompanyByCNPJ(string cnpj);
         Task<TB_COMPANY> GetCompanyByTradeName(string tradeName);
-
         Task CreateCompanyNotDuplicated(NewCompanyDTO company);
     }
 }

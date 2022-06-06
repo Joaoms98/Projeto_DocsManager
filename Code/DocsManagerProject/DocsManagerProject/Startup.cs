@@ -24,12 +24,6 @@ using System.Threading.Tasks;
 
 namespace DocsManagerProject
 {
-    /// <Sumary>
-    /// <para>Resume> Creating connection string </para>
-    /// <para>By: Joaoms98 <para>
-    /// <para>Version: 1.0</para>
-    /// <para>Date:16/05/2022</para>
-    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -38,7 +32,6 @@ namespace DocsManagerProject
         }
 
         public IConfiguration Configuration { get; }
-
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -74,7 +67,7 @@ namespace DocsManagerProject
 
             services.AddSwaggerGen(s =>
             {
-                s.SwaggerDoc("v1", new OpenApiInfo { Title = "DocsManagerProject", Version = "v1" });
+                s.SwaggerDoc("v1", new OpenApiInfo { Title = "DocsManager Project", Version = "v1" });
                 s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
                     Name = "Authorization",
@@ -101,15 +94,9 @@ namespace DocsManagerProject
                 });
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                s.IncludeXmlComments(xmlPath);
+                //s.IncludeXmlComments(xmlPath);
             });
         }
-        /// <Sumary>
-        /// <para>Resume> Configure of database initialize </para>
-        /// <para>By: Joaoms98 and Higlik <para>
-        /// <para>Version: 1.0</para>
-        /// <para>Date:16/05/2022</para>
-        /// </summary>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DocsManagerProjectContext context)
         {
             if (env.IsDevelopment())

@@ -31,12 +31,12 @@ namespace DocsManagerProject.src.repositories.implements
 
         #region methods
         /// <summary>
-        /// <para>Resume: Method for finding one company by Search</para>
-        /// <para>By: Vimirsi </para>
-        /// <para>Version: 1.0</para>
-        /// <para>Date: 18/05/2022 </para>
+        /// <para>Resume: Asynchronous methods to get all Bankslips by search</para>
         /// </summary>
-
+        /// <param name="value"></param>
+        /// <param name="expirationDate"></param>
+        /// <param name="cnpj"></param>
+        /// <returns>List</returns>
         public async Task<List<TB_BANK_SLIP>> GetBankSlipBySearch(double value, string expirationDate, string cnpj)
         {
             switch(value, expirationDate, cnpj) 
@@ -69,23 +69,20 @@ namespace DocsManagerProject.src.repositories.implements
         }
 
         /// <summary>
-        /// <para>Resume: Method responsible for searching a Bank Slip by id</para>
-        /// <para>By: Vimirsi </para>
-        /// <para>Version: 1.0</para>
-        /// <para>Date: 18/05/2022 </para>
+        /// <para>Resume: Asynchronous methods to get a Bankslip by id</para>
         /// </summary>
+        /// <param name="idBankSlip">id by bankslips</param>
+        /// <return>TB_BANK_SLIP</return>
         public async Task<TB_BANK_SLIP> GetBankSlipById(int idBankSlip)
         {
             return await _context.BankSlips
                 .FirstOrDefaultAsync(b => b.Id_Bank_Slip == idBankSlip);
         }
-        /// <summary>
-        /// <para>Resume: Method responsible for adding a new Bank Slip</para>
-        /// <para>By: Vimirsi </para>
-        /// <para>Version: 1.0</para>
-        /// <para>Date: 18/05/2022 </para>
-        /// </summary>
 
+        /// <summary>
+        /// <para>Resume: Asynchronous methods to created a bankslip</para>
+        /// </summary>
+        /// <param name="bankSlip">NewBankSlipDTO</param>
         public async Task NewBankSlip(NewBankSlipDTO bankSlip)
         {
             await _context.BankSlips.AddAsync(new TB_BANK_SLIP
@@ -99,12 +96,11 @@ namespace DocsManagerProject.src.repositories.implements
             });
             await _context.SaveChangesAsync();
         }
+
         /// <summary>
-        /// <para>Resume: Method used for updating an existing Bank Slip</para>
-        /// <para>By: Vimirsi </para>
-        /// <para>Version: 1.0 </para>
-        /// <para>Date: 18/05/2022 </para>
+        /// <para>Resume: Asynchronous methods to update a company</para>
         /// </summary>
+        /// <param name="bankSlip">UpdateBankSlipDTO</param>
         public async Task UpdateBankSlip(UpdateBankSlipDTO bankSlip)
         {
             var _bankslip = await GetBankSlipById(bankSlip.Id_Bank_Slip);
@@ -112,7 +108,6 @@ namespace DocsManagerProject.src.repositories.implements
             _bankslip.Expiration_Date = bankSlip.Expiration_Date;
             _bankslip.File_Address_Bank_Slip = bankSlip.File_Address_Bank_Slip;
             _bankslip.File_Address_Receipt = bankSlip.File_Address_Receipt;
-            _bankslip.File_Date = bankSlip.File_Date;
             _context.BankSlips.Update(_bankslip);
             await _context.SaveChangesAsync();
         }

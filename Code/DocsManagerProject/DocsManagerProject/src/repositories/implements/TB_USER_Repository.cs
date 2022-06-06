@@ -38,6 +38,7 @@ namespace DocsManagerProject.src.repositories.implements
             return await _context.Users
                     .FirstOrDefaultAsync(u => u.Email == email);
         }
+
         /// <summary>
         /// <para>Summary: Asynchronous method to add a new user</para>
         /// </summary>

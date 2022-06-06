@@ -66,8 +66,9 @@ namespace DocsManagerProject.src.dto
         [Required]
         public string File_Address_Receipt { get; set; }
 
-        public UpdateBankSlipDTO(double value, string expiration_Date, string file_Address_Bank_Slip, string file_Address_Receipt)
+        public UpdateBankSlipDTO(int id_Bank_Slip, double value, string expiration_Date, string file_Address_Bank_Slip, string file_Address_Receipt)
         {
+            Id_Bank_Slip = id_Bank_Slip;
             Value = value;
             Expiration_Date = expiration_Date;
             File_Address_Bank_Slip = file_Address_Bank_Slip;

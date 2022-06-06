@@ -20,7 +20,6 @@ C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerPr
 C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -108,3 +107,9 @@ D:\Biblioteca\Documents\Docs_Manager\Projeto_DocsManager\Code\DocsManagerProject
 D:\Biblioteca\Documents\Docs_Manager\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\obj\Debug\net5.0\DocsManagerProject.genruntimeconfig.cache
 D:\Biblioteca\Documents\Docs_Manager\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\obj\Debug\net5.0\ref\DocsManagerProject.dll
 D:\Biblioteca\Documents\Docs_Manager\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\obj\Debug\net5.0\DocsManagerProject.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jvm18\Desktop\prograhmaisaoção\Projeto_DocsManager\Code\DocsManagerProject\DocsManagerProject\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll

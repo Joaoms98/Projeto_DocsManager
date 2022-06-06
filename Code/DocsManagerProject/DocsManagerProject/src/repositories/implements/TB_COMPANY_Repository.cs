@@ -17,63 +17,55 @@ namespace DocsManagerProject.src.repositories.implements
     {
         #region attributes
         private readonly DocsManagerProjectContext _context;
-        private readonly TB_COMPANY _company;
         #endregion
 
         #region contructors
-        public TB_COMPANY_Repository (DocsManagerProjectContext context, TB_COMPANY company)
+        public TB_COMPANY_Repository (DocsManagerProjectContext context)
         {
             _context = context;
-            _company = company;
         }
         #endregion
 
         #region methods
         /// <summary>
-        /// <para>Resume: Method for finding one company by CNPJ</para>
-        /// <para>By: Joaoms98</para>
-        /// <para>Versão: 1.0</para>
-        /// <para>Date: 18/05/2022 </para>
+        /// <para>Resume: Asynchronous methods to get a company by cnpj</para>
         /// </summary>
+        /// <param name="cnpj">cnpj by company</param>
+        /// <return>TB_COMPANY</return>
         public async Task<TB_COMPANY> GetCompanyByCNPJ(string cnpj)
         {
             return await _context.Companies
                     .FirstOrDefaultAsync(c => c.CNPJ == cnpj);
         }
         /// <summary>
-        /// <para>Resume: Method for finding one company by TradeName</para>
-        /// <para>By: Joaoms98</para>
-        /// <para>Versão: 1.0</para>
-        /// <para>Data: 18/05/2022 </para>
+        /// <para>Resume: Asynchronous methods to get a company by name</para>
         /// </summary>
+        /// <param name="tradeName">name by company</param>
+        /// <return>TB_COMPANY</return>
         public async Task<TB_COMPANY> GetCompanyByTradeName(string tradeName)
         {
             return await _context.Companies
                    .FirstOrDefaultAsync(c => c.Trade_Name == tradeName);
         }
         /// <summary>
-        /// <para>Resume: Method for add new company </para>
-        /// <para>By: Joaoms98</para>
-        /// <para>Version: 1.0</para>
-        /// <para>Date: 18/05/2022 </para>
+        /// <para>Resume: Asynchronous methods to created a new Company</para>
         /// </summary>
-        public async Task NewCompany(NewCompanyDTO Company)
+        /// <param name="company">NewCompanyDTO</param>
+        public async Task NewCompany(NewCompanyDTO company)
         {
             await _context.Companies.AddAsync(new TB_COMPANY
             {
-                Trade_Name = Company.Trade_Name,
-                CNPJ = Company.CNPJ,
-                Telephone = Company.Telephone,
-                Agent = Company.Agent
+                Trade_Name = company.Trade_Name,
+                CNPJ = company.CNPJ,
+                Telephone = company.Telephone,
+                Agent = company.Agent
             });
             await _context.SaveChangesAsync();
         }
         /// <summary>
-        /// <para>Resume: Method for update Company </para>
-        /// <para>By: Joaoms98</para>
-        /// <para>Version: 1.0</para>
-        /// <para>Date: 18/05/2022 </para>
+        /// <para>Resume: Asynchronous methods to update a company</para>
         /// </summary>
+        /// <param name="company">UpdateCompanyDTO</param>
         public async Task UpdateCompany(UpdateCompanyDTO company)
         {
             var _company  = await GetCompanyByCNPJ(company.CNPJ);

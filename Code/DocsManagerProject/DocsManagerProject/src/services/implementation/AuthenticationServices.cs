@@ -87,7 +87,7 @@ namespace DocsManagerProject.src.services.implementation
         {
             var user = await _repository.GetUserByEmail(authentication.Email);
             if (user == null) throw new Exception("User not found");
-            if (user.Password != EncodePassword(authentication.Password)) throw new Exception("Incorrect Password ");
+            if (user.Password != EncodePassword(authentication.Password)) throw new Exception("Incorrect Password");
             return new AuthorizationDTO(user.Email, user.Type, GenerateToken(user));
         }
         #endregion

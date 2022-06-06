@@ -54,7 +54,7 @@ namespace DocsManagerProject.src.data.Controllers
         [Authorize(Roles = "USER, ADMIN")]
         public async Task<ActionResult> NewCompany([FromBody] NewCompanyDTO company)
         {
-            //if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return BadRequest();
 
             try
             {
@@ -63,10 +63,30 @@ namespace DocsManagerProject.src.data.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return Unauthorized(ex.Message);
             }
         }
 
+        /// <summary>
+        /// Update company
+        /// </summary>
+        /// <param name="company">UpdateCompanyDTO</param>
+        /// <returns>ActionResult</returns>
+        /// <remarks>
+        /// Example:
+        ///
+        ///     PUT /api/Companies
+        ///     {
+        ///        "trade_name": "Trader Store LTDA",
+        ///        "telephone": "11980807565",
+        ///        "agent": "João Meneses"
+        ///     }
+        ///     
+        /// </remarks>
+        /// <response code="200">Returns updated company</response>
+        /// <response code="400">Requisition error</response>
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpPut]
         [Authorize(Roles = "USER, ADMIN")]
         public async Task<ActionResult> UpdateCompany([FromBody] UpdateCompanyDTO company)
@@ -82,13 +102,13 @@ namespace DocsManagerProject.src.data.Controllers
         /// <summary>
         /// Get Company By CNPJ
         /// </summary>
-        /// <param cnpj="cnpj">string</param>
+        /// <param name="cnpj">string</param>
         /// <returns>ActionResult</returns>
         /// <response code="200">Returns company</response>
         /// <response code="404">CNPJ not found</response>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(TB_USER))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet]
+        [HttpGet("cnpjs/{companyCnpj}")]
         [Authorize(Roles = "USER, ADMIN")]
         public async Task<ActionResult> GetCompanyByCNPJ([FromRoute] string cnpj)
         {
@@ -101,13 +121,13 @@ namespace DocsManagerProject.src.data.Controllers
         /// <summary>
         /// Get Company By Trade Name
         /// </summary>
-        /// <param trade_name="tradeName">string</param>
+        /// <param name="tradeName">string</param>
         /// <returns>ActionResult</returns>
         /// <response code="200">Returns company</response>
         /// <response code="404">Trade Name not found</response>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(TB_USER))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet]
+        [HttpGet("tradeName/{companyTradeName}")]
         [Authorize(Roles = "USER, ADMIN")]
         public async Task<ActionResult> GetCompanyByTradeName([FromRoute] string tradeName)
         {
