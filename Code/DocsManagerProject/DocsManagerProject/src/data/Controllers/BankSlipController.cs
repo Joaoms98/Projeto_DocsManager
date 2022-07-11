@@ -110,9 +110,9 @@ namespace DocsManagerProject.src.data.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [HttpGet("BankSlips/{idBankSlips}")]
         [Authorize(Roles = "USER, ADMIN")]
-        public async Task<ActionResult> GetBankSlipById([FromRoute] int bankSlip)
+        public async Task<ActionResult> GetBankSlipById([FromRoute] int idBankSlips)
         {
-            var bankSlips = await _repository.GetBankSlipById(bankSlip);
+            var bankSlips = await _repository.GetBankSlipById(idBankSlips);
             if (bankSlips == null) 
                 return NotFound();
             return Ok(bankSlips);

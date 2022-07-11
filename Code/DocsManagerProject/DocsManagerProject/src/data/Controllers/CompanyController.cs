@@ -110,9 +110,9 @@ namespace DocsManagerProject.src.data.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [HttpGet("cnpjs/{companyCnpj}")]
         [Authorize(Roles = "USER, ADMIN")]
-        public async Task<ActionResult> GetCompanyByCNPJ([FromRoute] string cnpj)
+        public async Task<ActionResult> GetCompanyByCNPJ([FromRoute] string companyCnpj)
         {
-            var company = await _repository.GetCompanyByCNPJ(cnpj);
+            var company = await _repository.GetCompanyByCNPJ(companyCnpj);
 
             if (company == null) return NotFound();
             return Ok(company);
@@ -129,9 +129,9 @@ namespace DocsManagerProject.src.data.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [HttpGet("tradeName/{companyTradeName}")]
         [Authorize(Roles = "USER, ADMIN")]
-        public async Task<ActionResult> GetCompanyByTradeName([FromRoute] string tradeName)
+        public async Task<ActionResult> GetCompanyByTradeName([FromRoute] string companyTradeName)
         {
-            var company = await _repository.GetCompanyByTradeName(tradeName);
+            var company = await _repository.GetCompanyByTradeName(companyTradeName);
 
             if (company == null) return NotFound();
             return Ok(company);
